@@ -15,7 +15,11 @@
   max-height: 756px;
   /* выше установили ограничения для секции */
 }
-
+.logo{
+  width:183;
+   height:32;
+   background-image: url(how-to-);
+}
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
@@ -28,4 +32,7 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+.digits{
+  font-size:75px ;
 }
