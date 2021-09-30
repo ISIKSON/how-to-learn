@@ -135,6 +135,97 @@ li:last-of-type{
   line-height:34px;
   font-weight:bold;
 }
+.digits{
+ margin-bottom: 100px;
+}
+.section-title{
+line-height: 1.15;
+font-size: 60px;
+font-weight:bold;
+border: 3px solid green;
+width: 60%;
+margin: 0 auto;
+text-align: center;
+margin-bottom: 20px;
+}
+.section-subtitle{
+  line-height: 34px;
+  font-size: 24px;
+  font-weight:normal;
+  border: 3px solid black;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+.table{
+  margin:0 auto ;
+  list-style-type:none;
+  border: 3px solid red; 
+  width: 1100px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.table_cell{
+  border: 3px solid green;
+  width: 250px;
+  margin-top: 60px;
+  /*padding-bottom: 60px;*/
+}
+/*li:last-of-type{
+  padding-bottom: 0;
+}*/
+.table_heading{
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight:bold;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.table_text{
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight:normal;
+}
+.table_text-source{
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight:normal;
+}
+
+/*.feynman{
+
+
+}
+.feynman__title{
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight:bold;
+
+}
+.feynman__subtitle{
+  line-height: 51px;
+  font-size: 36px;
+  font-weight:normal;
+}
+.feynman__link{
+  line-height: 51px;
+  font-size: 36px;
+  font-weight:normal;
+}
+.feynman__image{
+  left: 0;
+  bottom: 0;  
+}
+.feynman__image_position{
+/*position: absolute;
+}*/
+
+
+
+
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 /*.header__square-pic {
   height: 568px;
