@@ -8,7 +8,10 @@
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+ }
 .header {
   height: 100vh;
   min-height: 600px;
@@ -104,7 +107,7 @@ position: absolute;
   border: 3px solid red;
 }
 
-.two-columns_brief{
+.two-columns__brief{
   font-size: 18px;
   color:  #2f80ed;
   line-height:1.2;
@@ -113,14 +116,14 @@ position: absolute;
   border: 3px solid green;
 }
 
-.two-columns_main-text{
+.two-columns__main-text{
   width: 80%;
   min-width: 784px;
   list-style-type:none;
   border: 3px solid green;
 }
 
-.two-columns_paragraph{
+.two-columns__paragraph{
   font-size: 24px;
   line-height:34px;
   font-weight: normal;
@@ -130,7 +133,7 @@ position: absolute;
 li:last-of-type{
   padding-bottom: 0;
 }
-.two-columns_span-accent{
+.two-columns__span-accent{
   font-size: 24px;
   line-height:34px;
   font-weight:bold;
@@ -163,12 +166,12 @@ margin-bottom: 20px;
   list-style-type:none;
   border: 3px solid red; 
   width: 1100px;
-  padding: 0;
+  padding: 0 ;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.table_cell{
+.table__cell{
   border: 3px solid green;
   width: 250px;
   margin-top: 60px;
@@ -177,19 +180,20 @@ margin-bottom: 20px;
 /*li:last-of-type{
   padding-bottom: 0;
 }*/
-.table_heading{
+.table__heading{
   line-height: 1.15;
   font-size: 24px;
   font-weight:bold;
   margin-top: 0;
   margin-bottom: 20px;
 }
-.table_text{
+.table__text{
   line-height: 1.2;
   font-size: 18px;
   font-weight:normal;
+  margin-bottom: 20px;
 }
-.table_text-source{
+.table__text-source{
   line-height: 1.2;
   font-size: 18px;
   font-weight:normal;
@@ -197,10 +201,8 @@ margin-bottom: 20px;
 
 .feynman{
   position: relative;
-    
     height: 890px;
     background-color: #f2f2f2 ;
-
 }
 .feynman__title{
   padding-top: 100px;
@@ -248,8 +250,42 @@ margin-bottom: 20px;
   position: absolute;
 }
 
-
-
+.kaufman{
+  position: relative;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #1f1f1f;
+}
+.section-title_theme_dark{
+  margin-bottom: 20px;
+  color: white;
+}
+.section-subtitle_theme_dark{
+  color: white;
+}
+.table_theme_dark{
+  position: relative;
+  z-index: 2;
+}
+.table__cell_theme_dark{
+width: 200px;
+margin-top: 80px;
+}
+.table__heading_theme_dark{
+  color: white;
+  margin-bottom: 20px;
+}
+.table__text_theme_dark{
+  color: white; 
+}
+.kaufman__triangle{
+position: absolute;
+width: 877px;
+height: 877px;
+top: 0;
+right: -210px;
+z-index: 1;
+}
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 /*.header__square-pic {
