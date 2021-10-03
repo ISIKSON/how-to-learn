@@ -9,12 +9,6 @@
   font-family: 'Helvetica Neue', 'Arial', sans-serif;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  /*выше обнуляю отступы у текстовых элементов*/
- }
-
 .header {
   height: 100vh;
   min-height: 600px;
@@ -24,16 +18,15 @@
   display: flex;
   align-items: center;
   position: relative;
-  
   /* выше установили ограничения для секции */
 }
 
 .logo {
   width: 183px;
-   height: 32px;
-   top: 30px;
-   left: 64px;
-   z-index: 3;
+  height: 32px;
+  top: 30px;
+  left: 64px;
+  z-index: 3;
 }
 
 .logo_place_header {
@@ -59,6 +52,8 @@
   display: inline;
   z-index: 3;
   position: absolute;
+  margin: 0;
+  padding: 0;
 }
 
 .header__link {
@@ -77,6 +72,7 @@
   right: 0;
   z-index:2;
   position: absolute;
+  object-fit: cover;
 }
 
 .header__square-pic {
@@ -106,6 +102,8 @@
   line-height: 1.2;
   font-weight: normal;
   width: 175px;
+  margin: 0;
+  padding: 0;
 }
 
 .two-columns__main-text {
@@ -119,9 +117,10 @@
   line-height: 34px;
   font-weight: normal;
   padding-bottom: 30px;
+  margin: 0;
 }
 
-li:last-of-type {
+.two-columns__paragraph:last-of-type {
   padding-bottom: 0;/*Убираю отступ у последнего элемента списка*/
 }
 
@@ -132,7 +131,7 @@ li:last-of-type {
 }
 
 .digits{
- margin-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 .section-title {
@@ -184,10 +183,11 @@ li:last-of-type {
   margin-bottom: 20px;
 }
 
-.table__text-source {
+.table__text_source {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
+  margin: 0;
 }
 
 .feynman {
@@ -229,6 +229,7 @@ li:last-of-type {
   color: #2f80ed;
   text-decoration: none;
   right: 48px;
+  z-index: 3;
 }
 
 .feynman__image {
@@ -237,9 +238,6 @@ li:last-of-type {
   left: 0;
   bottom: 0;
   z-index: 1;
-}
-
-.feynman__image_position { 
   position: absolute;
 }
 
@@ -330,7 +328,7 @@ li:last-of-type {
 
 .footer__column_content_info {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
 }
 
 .footer__column-heading {
@@ -339,11 +337,13 @@ li:last-of-type {
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
+  margin-top: 0px;
 }
 
 .footer__column-links {
   list-style-type: none;
   margin-bottom: 16px;
+  padding: 0;
 }
 
 .footer__column-link {
@@ -355,8 +355,8 @@ li:last-of-type {
 }
 
 .footer__column_content_social {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column; 
 }
 
 .footer__social-icon {
