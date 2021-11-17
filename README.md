@@ -15,3 +15,4 @@
 
 **Ссылка на проект**
 
+(https://isikson.github.io/how-to-learn/)
